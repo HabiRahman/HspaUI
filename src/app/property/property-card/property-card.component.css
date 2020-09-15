@@ -1,7 +1,45 @@
-h1{
+p{
   color: green;
 }
 
 .propImage{
   height: 250px;
+}
+
+.card-container:hover img{
+  transform: scale(1.2,1.2);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  opacity: 0.5;
+  bottom: 0;
+}
+
+.card-container img{
+  transform: scale(1,1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.card-img-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.memeber-icon{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+.card-container:hover .memeber-icon
+{
+  bottom: 0;
+  opacity: 1;
+}
+
+.animate{
+  transition: all 0.3s ease-in;
 }

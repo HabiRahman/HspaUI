@@ -1,13 +1,19 @@
-
-
-<div class="row">
-  <div class="card shadow-lg col-sm-4">
+   <div class="card-container">
+   <div class="card-img-wrapper">
     <img class='propImage' src="assets/Images/house_default.jpg">
+    <ul class="list-inline text-center memeber-icon animate">
+      <li class="list-inline-item">
+        <button class="btn btn-primary" ><i class="far fa-edit"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary" ><i class="fas fa-id-card"></i></button>
+      </li>
+    </ul>
+   </div>
     <div class="card-body p-1">
-      <h1> {{property.Name}}</h1>
-      <h1> {{property.Type}}</h1>
-      <h1> {{property.Price}}</h1>
+      <p> {{property.Name}}</p>
+      <p> {{property.Type}}</p>
+      <p> {{property.Price}}</p>
     </div>
-
   </div>
-</div>
+
